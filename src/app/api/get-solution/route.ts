@@ -10,16 +10,13 @@ export async function GET(request: Request) {
     return NextResponse.json({ error: "Missing parameters" }, { status: 400 });
   }
 
-  const rawURL = `https://raw.githubusercontent.com/Centinoughty/leetcode/main/${questionId}.${language}`;
+  const rawURL = `https://raw.githubusercontent.com/${process.env.NEXT_PUBLIC_GITHUB}/leetcode/main/${questionId}.${language}`;
 
   try {
     const res = await fetch(rawURL);
 
     if (!res.ok) {
-      return NextResponse.json(
-        { error: "Code not found" },
-        { status: 404 }
-      );
+      return NextResponse.json({ error: "Code not found" }, { status: 404 });
     }
 
     const code = await res.text();
