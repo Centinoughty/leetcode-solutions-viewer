@@ -15,7 +15,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center px-4">
+    <div className="grow w-full flex justify-center items-center bg-gray-100 px-4">
       <div className="bg-white w-full max-w-md p-8 rounded-2xl shadow-xl border border-gray-200">
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-4 tracking-tight">
           🧠 LeetCode Solutions
