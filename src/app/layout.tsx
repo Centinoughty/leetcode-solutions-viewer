@@ -28,7 +28,7 @@ export default function RootLayout({
           <p className="mb-1">
             Built by{" "}
             <Link
-              href="https://nadeem-temp.vercel.app"
+              href="https://nadeemsiyam.com"
               className="font-semibold text-gray-700"
             >
               Nadeem M Siyam
@@ -43,7 +43,7 @@ export default function RootLayout({
               <FaGithub />
             </Link>
             <Link
-              href="https://linkedin.com/in/nade"
+              href="https://linkedin.com/in/nadeem-m-siyam"
               target="_blank"
               className="hover:underline"
             >
